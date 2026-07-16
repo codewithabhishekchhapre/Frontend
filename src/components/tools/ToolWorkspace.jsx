@@ -45,7 +45,7 @@ export function ToolWorkspace({ tool }) {
     setPreviousInput(input)
     setOutput(result)
     addHistory({ toolId: tool.id, toolName: tool.name, input, output: result })
-    if (autoCopy) {
+    if (autoCopy || operation.alwaysAutoCopy) {
       await copyText(result)
     } else {
       toast.success(`${operation.label} applied`)

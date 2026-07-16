@@ -19,7 +19,7 @@ export const TOOLS = [
     category: CATEGORIES.FORMATTER,
     icon: 'CircleOff',
     example: { input: '123.456.789', output: '123456789' },
-    operations: [{ id: 'remove-dot', label: 'Remove Dot', fn: removeDot }],
+    operations: [{ id: 'remove-dot', label: 'Remove Dot', fn: removeDot, alwaysAutoCopy: true }],
     favorite: true,
   },
   {
